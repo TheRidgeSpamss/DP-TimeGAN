@@ -20,10 +20,9 @@ def main(parameters, checkpoint_filename):
 
     # Data loading - run torch_dataloading.py individually with the correct parameters to save the values as necessary
     ori_data, labels = None, None
-    if parameters["data_name"] in ["ckd", "eicu"]:
-        if parameters["data_name"] == "ckd":
-            data_file_name = "ckd_sequences.npy"
-            label_file_name = "ckd_labels_hypertension.npy"
+    if parameters["data_name"] in ["ckd"]:
+        data_file_name = "ckd_sequences.npy"
+        label_file_name = "ckd_labels_hypertension.npy"
 
         data_file_path = os.path.join(data_dir, data_file_name)
         label_file_path = os.path.join(data_dir, label_file_name)
