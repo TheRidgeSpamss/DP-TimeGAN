@@ -1,0 +1,40 @@
+---
+#data paramters
+data_name: "ckd"
+seq_len: 30
+sine_no: 1000
+sine_dim: 5
+resample_rate: "15min"
+
+#network parameters
+module: "gru"
+hidden_dim: 24
+num_layers: 3
+
+#model training/testing
+gamma: 1
+lr: 0.001
+iterations: 10000
+print_times: 100
+batch_size: 128
+synth_size: 500
+metric_iteration: 3
+num_samples_plotted: 15
+noise_sd: 0.2
+alternative_coverage: true
+seed: 42
+
+#checkpointing
+checkpoint: ""
+filename_additions: ""
+
+#model running parameters
+test_only: false
+only_visualize_metric: false
+sample_to_excel: true
+
+#dp parameters
+use_dp: true
+eps: 15
+
+...
