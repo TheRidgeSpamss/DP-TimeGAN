@@ -1,4 +1,4 @@
-'''Extracted directly from the original codebase:
+'''Adapted from the original codebase:
 J. Yoon, D. Jarrett, M. van der Schaar, "Time-series Generative Adversarial Networks," 
 Neural Information Processing Systems (NeurIPS), 2019.
 '''
